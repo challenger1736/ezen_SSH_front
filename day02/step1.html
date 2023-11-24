@@ -1,0 +1,38 @@
+<!-- 주석(설명 달기) = ctrl+/ -->
+<!-- 
+    vscode 에디터 자동완성 : ctrl+space bar (에디터마다 또 다름)
+        - 코드 추천을 해줌
+ -->
+
+ 
+<!DOCTYPE html> <!-- html5 버전 선언 -->
+
+<html> <!-- html 시작 태그 -->
+<head> <!-- HTML 옵션 정보들 -->
+    <meta charset='utf-8'> <!-- 한글을 지원해주는 기능 -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'> 
+    <title>페이지 탭</title> <!-- 페이지의 제목 -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'><!-- 디바이스에 따른 크기변경, 반응향 설정(아직 안배움) -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'><!-- CSS파일 불러오기 -->
+    <script src='main.js'></script><!-- JS파일 불러오기 -->
+</head>
+<body><!-- HTML 내용 -->
+
+    <!-- 이미지
+        상대 경로 : 현재 파일 기준으로부터 불러올 파일의 위치
+        ../ : 상위 폴더로 이동
+        ../폴더명/파일명 : 상위 폴더로 이동 후 해당 폴더로 이동
+        절대 경로 : C:\Users\504\Desktop\ezen_SSH_front\day01\capyzou 하위폴더 연습\capyzou.png-->
+    <!-- 이미지 출력 -->
+    <img src="../capyzou.png"/>
+    <br/>
+    <img src="../day01/capyzou.png"/>
+    <!-- 2. 음성 파일 출력 -->
+        <audio src="lofi-chill-medium-version-159456.mp3" controls></audio>
+    <!-- 3. 영상 파일 출력 -->
+        <video src="182970 (360p).mp4" controls autoplay muted></video>
+    <!-- 4. 멀티 미디어 출력 -->
+        <iframe src=""></iframe>
+
+</body><!-- HTML 내용 끝 -->
+</html> <!-- html 끝 태그 -->
