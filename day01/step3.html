@@ -69,6 +69,14 @@
     <img src="../capyzou.png"/> <!-- 상위폴더내 이미지 경로 -->
     <img src="capyzou 하위폴더 연습/capyzou.png"/> <!-- 하위폴더내 이미지 경로 -->
 
+    <audio src=""></audio> <!-- 오디오 -->
+    <video src=""></video> <!--미디어 -->
+        <video src="" controls></video> <!-- 컨트롤러 추가 -->
+        <video src="" controls autoplay></video> <!-- 정책 상 금지 (오토 플레이) -->
+        <video src="" controls autoplay muted></video> <!-- 뮤트쓰면 그나마 플레이 됨 -->
+    
+    <iframe></iframe> <!-- 외부 멀티미디어 퍼가기 -->
+
     <br/><!-- p.35 -->
     강조하고 싶은 문장 마크업하기
     <em> 강조구문</em>
@@ -107,6 +115,47 @@
     </table> <!--테이블 끝-->
 
     <p> tr구분 해주는게 좋다</p>
+    
+    <address></address>
+
+    <input /><br/>
+        - form 태그 안에서 사용<br/>
+        - 주요, 속성
+            1.type<br/>
+            type="text"<br/>
+            type="password"<br/>
+            type="date"<br/>
+            type="file"<br/>
+            type="radio"<br/>
+            type="checkbox"<br/>
+
+            type="button"<br/>
+            type="submit" : form 전송<br/>
+            type="reset" : 입력 초기화<br/>
+
+            2.name<br/>
+            - 태그의 이름을 넣어서 식별하는 역할<br/>
+             <남자 이름 = 유재석 />
+
+            3.value<br/>
+            - 초기값 넣어주기<br/>
+            4.placeholder<br/>
+            - 가이드 라인<br/>
+            5.readonly<br/>
+            - 수정불가<br/>
+            6.autofocus<br/>
+            - 포커스[커서 이동]<br/>
+            7.minlength, maxlength<br/>
+            - 값 최소 길이, 최대 길이<br/>
+            8.multiple<br/>
+            -type file 여러개<br/>
+            9.checked<br/>
+            -type radio나 checkbox에 체크 상태<br/>
+
+
+    <select><option>카카오</option></select>
+
+    select랑 option이랑 세트메뉴
 
 </body>
 </html>

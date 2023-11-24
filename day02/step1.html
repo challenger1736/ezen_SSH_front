@@ -31,8 +31,59 @@
         <audio src="lofi-chill-medium-version-159456.mp3" controls></audio>
     <!-- 3. 영상 파일 출력 -->
         <video src="182970 (360p).mp4" controls autoplay muted></video>
-    <!-- 4. 멀티 미디어 출력 -->
-        <iframe src=""></iframe>
+    <!-- 4. 외부 멀티 미디어 [퍼가기] 출력 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i2o5g5C74Ic?si=BLaYwa2WRlUXBeRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- 5. 구글 지도 퍼가기 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.389994487019!2d126.85119457645176!3d37.30958873881931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f26eca4e801%3A0xcc760a7a473e93bf!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1700790241028!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!-- ============ 입력 관련 태그 ============ -->
+    <form> <!-- 양식(폼) START -->
+        <input />아이디/비밀번호 등 입력 상자<br/>
+        <input value="유재석" readonly/><br/>
+        <input type="text" placeholder="부서 번호" disabled/>텍스트<br/><!-- 텍스트 입력창 -->
+        <input type="password" autofocus/>패스워드<br/><!-- 패스워드 입력창 -->
+        <input type="email" minlength="3" maxlength="5"/>이메일<br/><!-- 이메일 입력창 [submit 제출 시 유효성 검사]-->
+
+        <input type="color"/>컬러<br/><!-- 색상 -->
+        <input type="date" value="2023-11-24"/>데이트<br/><!-- 날짜 -->
+        <input type="datetime local"/>데이트로컬<br/><!-- 날짜/시간 -->
+        <input type="month"/>먼스<br/><!-- 날짜(월입력) -->
+        <input type="time"/>타임<br/><!-- 시간 -->
+        <input type="week"/>위크<br/><!-- 주 -->
+        <input type="range"/>레인지<br/><!-- 범위 -->
+        <input type="number"/>넘버<br/>
+
+        <input type="file" multiple />파일<br/><!-- 첨부파일 -->
+
+        <input type="radio" name="agree" checked/>예<br/>
+        <!-- 원형 체크버튼 [단일선택 하려면 = 여러개 radio 타입의 name을 동일하게]-->
+        <!-- checked는 체크된 상태 -->
+        <input type="radio" name="agree"/>아니오<br/><!-- 원형 체크버튼 -->
+
+        <input type="checkbox"/>뉴스
+        <input type="checkbox" checked/>지인 추천
+        <input type="checkbox"/>검색<br/>
+
+        <input type="button"/>버튼<br/><!-- 일반 버튼 입력/클릭 -->
+        <input type="submit"/>서브밋<br/><!-- 전송/제출 버튼 입력/클릭 -->
+        <input type="reset"/>리셋<br/><!-- 초기화 버튼 입력/클릭 -->
+
+        <textarea rows="10" cols="10">
+긴 글~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        </textarea>
+
+        <br/>
+
+        <select>
+            <option>네이버</option>
+            <option>구글</option>
+            <option>카카오</option>
+        </select>
+    </form> <!-- 양식(폼) END -->
 </body><!-- HTML 내용 끝 -->
 </html> <!-- html 끝 태그 -->
