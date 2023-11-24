@@ -1,0 +1,54 @@
+
+1. CSS 적용하는 방법
+    1. CSS파일 만들어서 HTML에 <head> 태그에 호출방식 [권장]
+        <link rel="stylesheet" href="css파일경로"/>
+    2. HTML <head>태그에 <style> 태그 이용하는 방식
+        <style></style>
+    3. HTML <마크업 style=""> style 속성 이용방식
+
+2. CSS 작성하는 방법
+    어디에 { 무엇을 : 어떻게; }
+
+        1. 어디에 [선택자]
+            1.*         : 모든 곳
+            2.마크업     : 해당 마크업만
+            3.class     : 해당 class속성에 동일한 이름을 갖는 마크업
+            4.id        : 해당 id속성에 동일한 이름을 갖는 마크업
+            *class명과 id의 이름은 아무거나 [권장: 의미있는 영문]
+            <input class="titleinput">
+            <table id="boardTable">
+
+            - 식별자 우선 순위
+                * < 마크업 < class < id
+
+3. CSS 속성 종류
+    1. background-color              : 배경색
+    ==== 폰트 관련 ====
+    2. font-family                   : 폰트
+        웹 폰트도 사용
+        (예시)@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+    3. font-size                     : 폰트 크기 [ px: 픽셀 ]
+    4. font-style : italic;          : 기울기
+    5. font-weight : bold;           : 진하게
+    6. color                            : 색상
+    7. word-spacing                     : 어간
+    8. letter-spacing                   : 자간
+    9. line-height                      : 줄간격 160%를 많이 씀(150%~180%)
+    10. text-align                      : 텍스트 가로 정렬
+        left, right, center             : 왼 오 중앙
+    11. text-decoration                 : 텍스트 선 긋기
+        line-through 취소
+        underline   밑줄
+        overline    윗줄
+    12. text-shadow                     : 텍스트 그림자
+        x축, y축, 흐림 정도, 색상
+
+4.  CSS 색상 표현하는 방법
+    1. 색상이름 : red
+    2. 헥사코드 : #9b1010
+    3. rgb 색상표 : rgb (0~255, 0~255, 0~255)
