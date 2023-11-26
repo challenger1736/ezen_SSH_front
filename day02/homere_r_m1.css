@@ -2,7 +2,7 @@
 body { background-color:#30beba; font-family: BMDOHYEON;}
 body{line-height: 160%; font-size: 16px; }
 textarea{width: 550px; height: 300px;}
-fieldset{background-color:white;}
+fieldset{background-color:white; }
 #name{ font-size: 13px;  font-family: BMDOHYEON; font-weight: bold; width: 220px; height: 20px;}
 #area{font-family: BMDOHYEON; font-size: 15px;}
 #logo{width:300px; display: block; margin: 0 auto; }
