@@ -70,8 +70,8 @@
 9. <address>
     - 주소 마크업 
 
-10. <input />
-    - <form> 태그 안에서 사용 
+10. <input /> 
+    - <form> 태그 안에서 사용 [select, option의 관계처럼 input과 form은 연관으로 기억해주는 편이 좋다.]
     - 주요 속성 
         1. type 
             type="text"     : [기본값] 텍스트 *
