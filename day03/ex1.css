@@ -1,0 +1,51 @@
+#field{ background-color: rgb(85, 223, 204);
+    width: 700px; height: 1050px;
+    border-radius: 18px;
+    border: rgb(85, 223, 204);
+    margin: 0 auto;}
+#name{border: white solid 2px; 
+    text-align: center; 
+    border-radius: 2000px;
+    border-width: 5px;
+    width: 500px; height: ;
+    margin: 0 auto;
+    padding: 2px;
+    font-size: 30px;
+font-weight: bold}
+#capyimg{width: 300px; 
+    border-radius: 6000px;
+display: block; /* 이미지도 인라인이라 block 설정해줘야 센터 설정 가능함 */
+margin: 0 auto;
+}
+#intro{ font-weight: bold;
+font-size: 28px;
+text-align: center;}
+#SNS{ font-weight: bold;
+text-align: center;
+}
+#sns1{
+    border:  rgb(207, 104, 152) solid 1px ;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 40px 0 ;
+    background-color:  rgb(207, 104, 152);
+    font-size: 35px;
+    box-sizing: border-box;
+ }
+#sns2{border:  rgb(207, 104, 152) solid 1px ;
+     border-radius: 15px;
+     margin: 30px;
+     padding: 40px 0 ;
+     font-size: 35px;
+    background-color:  rgb(207, 104, 152);
+}
+#sns3{border:  rgb(207, 104, 152) solid 1px ;
+     border-radius: 15px;
+     margin: 30px;
+     padding: 40px 0 ;
+     font-size: 35px;
+     background-color:  rgb(207, 104, 152);}
+
+a{ color: white;
+    text-decoration : none;
+    letter-spacing:0.5px}

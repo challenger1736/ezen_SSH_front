@@ -1,0 +1,43 @@
+/* 56~71p */
+
+body {/* 56p */
+    background-color: #bbf1ef;
+    /* 58p */
+    font-family: sans-serif;}
+    
+h1{/* 58p */
+    font-size: 18px;
+    /* 60p */
+    border: 1px solid #ffffff;
+    /* 60p */
+    border-radius: 20px ;
+    padding: 6px 0 ; /* 62p */
+    margin: 20px 0 ; /* 62p */
+    width: 300px /* 64p */;
+    margin: 20px auto; /* 64p */
+    text-align: center; /* 66p */
+}
+/* 66p */
+p, ul {/* 두 개 이상의 선택자를 작성할때 쉼표(,) */
+
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+/* 67p 이미지 둥글게 */
+img {border-radius: 50%;}
+
+/* 68p 버튼 만들기 */
+a {background-color: #ff9a9e;
+display: block;
+padding: 20px 0;
+border-radius: 4px;/* 70p */
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;/* 책에 없음 */
+}
+/* 69p 버튼 만들기 */
+ul{width: 300px;
+margin: 0 auto;}
+
+li{margin-bottom: 20px;}

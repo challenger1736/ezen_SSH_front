@@ -1,3 +1,6 @@
+HTTP 는 HTML만 통신이 되는 것 / HTML에 CSS JS가 덮혀 가는 것.
+
+
 
 1. CSS 적용하는 방법
     1. CSS파일 만들어서 HTML에 <head> 태그에 호출방식 [권장]
@@ -12,8 +15,8 @@
         1. 어디에 [선택자]
             1.*         : 모든 곳
             2.마크업     : 해당 마크업만
-            3.class     : 해당 class속성에 동일한 이름을 갖는 마크업
-            4.id        : 해당 id속성에 동일한 이름을 갖는 마크업
+            3.class     : 해당 class속성에 동일한 이름을 갖는 마크업 .
+            4.id        : 해당 id속성에 동일한 이름을 갖는 마크업 #
             *class명과 id의 이름은 아무거나 [권장: 의미있는 영문]
             <input class="titleinput">
             <table id="boardTable">
@@ -36,8 +39,8 @@
     4. font-style : italic;          : 기울기
     5. font-weight : bold;           : 진하게
     6. color                            : 색상
-    7. word-spacing                     : 어간
-    8. letter-spacing                   : 자간
+    7. word-spacing                     : 어간 [px]
+    8. letter-spacing                   : 자간 [px]
     9. line-height                      : 줄간격 160%를 많이 씀(150%~180%)
     10. text-align                      : 텍스트 가로 정렬
         left, right, center             : 왼 오 중앙
@@ -45,7 +48,7 @@
         line-through 취소
         underline   밑줄
         overline    윗줄
-    12. text-shadow                     : 텍스트 그림자
+    12. text-shadow                     : 텍스트 그림자 , 주로 강조효과로 씀
         x축, y축, 흐림 정도, 색상
 
 4.  CSS 색상 표현하는 방법

@@ -1,0 +1,76 @@
+/* 어디에 {무엇을:어떻게; 무엇을: 어떻게; } 
+    1. 어디의[선택자]
+        1. * 2.마크업 3. .class 4.#id
+
+*/
+
+.box1 { border : 1px solid red} /* 두께 선종류 색상 */
+
+.box2 { border-top: 1px solid blue;
+        border-right: dotted 2px orange ;
+        border-bottom: double 3px red;
+        border-left: dashed 4px black;}
+    
+.box3 { border: solid red 2px;
+        border-radius: 17px;} /* 둥근 모서리 */
+        
+.box4 { border: solid 1px blue ;
+         padding: 10px;
+         margin: 20px;}
+
+.box5 { border: solid 1px orangered;
+        padding-top: 20px; /* 위 안쪽 여백 */
+        padding-right: 30px; /* 오른쪽 안쪽 여백 */
+        padding-bottom: 40px; /* 아래 안쪽 여백 */
+        padding-left: 50px /* 왼쪽 안쪽 여백 */;
+    
+        margin-top: 50px;/* 위 바깥 여백 */
+        margin-right: 60px;/* 오른 바깥 여백 */
+        margin-bottom: 70px;/* 아래 바깥 여백 */
+        margin-left: 80px;/* 왼 바깥 여백 */}
+
+.box6 { border: solid 2px palevioletred;
+        padding: 10px 20px 30px 40px /* 위 오른쪽 아래 왼 의 안쪽 여벡 */;
+        padding: 10px 20px /* 위+아래 / 왼쪽+오른쪽의 안쪽 여백 */;
+        padding: 10px /* 4방향 다 안쪽 여백 */;
+        
+        margin: 10px 20px 30px 40px;
+        margin: 10px 20px;
+        margin: 10px; /* 이하 동문 */}
+
+.box7 { border: solid 1px black;
+    width: 200px; height: 200px;
+    box-sizing: content-box; /* border + padding을 사이즈에 포함시킬지 말지 */
+    padding: 20px;  /* box-sizing: content-box 포함X */
+}
+.box8 { border: solid 1px black;
+    width: 200px; height: 200px;
+    box-sizing: border-box; /* border + padding을 사이즈에 포함시킬지 말지 */
+    padding: 20px;  /* box-sizing: border-box 포함O */
+
+    text-align: center; /* 내용 가운데 정렬 */
+
+    margin: 0 auto;} /* 박스 가운데 정렬 * 많이씀! */
+
+
+div { border: solid 1px red; margin: 20px; background: blanchedalmond;}
+span { background-color: orange;}
+
+.s1{ display: inline; 
+    width: 200px; height: 200px;} /* 인라인 */
+.s2{ display: block; 
+    width: 200px; height: 200px;} /* 블록 - 사이즈 적용이 됨 */
+.s3{ display: inline-block;
+    width: 200px; height: 200px;} /* 인라인 블록 - 인라인, 사이즈 적용이 됨 */
+.s4 {display: none; /* 숨기기 */
+    width: 200px; height: 200px;}
+
+.d1 { display: inline; 
+    width: 200px; height: 200px;} /* 인라인 */
+.d2{ display: block; 
+    width: 200px; height: 200px;} /* 블록 - 사이즈 적용이 됨 */
+.d3{ display: inline-block;
+    width: 200px; height: 200px;} /* 인라인 블록 - 인라인, 사이즈 적용이 됨 */
+.d4 {display: none; /* 숨기기 */
+    width: 200px; height: 200px;}
+    
