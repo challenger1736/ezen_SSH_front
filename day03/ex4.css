@@ -1,4 +1,4 @@
-*{line-height: 160%;
+body{line-height: 160%;
 }
 
 
@@ -9,7 +9,7 @@ img { display: block;
 border-bottom: lightgray solid 2px;}
 p{   box-sizing: border-box;
     margin-left: 2px;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     width: 400px;
     border: lightgray solid 2px;}
 #title{font-size: 20px;
