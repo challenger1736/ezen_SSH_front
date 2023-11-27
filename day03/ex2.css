@@ -1,0 +1,44 @@
+*{line-height: 160%;}
+
+
+#title1{ font-weight: bold;
+    border-left: 10px solid green;
+    padding-left: 10px;
+}
+
+
+#f1{ border: grey 2px solid;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+#title2 {border-left: 10px solid green;
+    padding-left: 10px;}
+
+#f2 { border: grey 2px solid;
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 30px 20px;
+    border-radius: 30px;}
+#baro{text-align: right;
+    font-weight: bold;
+    
+}
+
+p{padding-bottom: 5px;}
+a{ 
+     text-decoration: none;
+     
+    color: black;}
+
+#overline1{ font-weight: bold;
+    padding-top: 15px ;
+    border-top: lightgray 2px dotted ;
+    text-align: right;}
+
