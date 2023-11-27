@@ -4,15 +4,36 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='ex6.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    kakao
+    <br/><p id="pagelogo">kakao</p><br/>
+    <div id="frame1">
+    <br/><br/>
 
-    <input type="text" id="id1">
-    <input type="password" id="passw1">
-    
+    <input type="text" id="id1" placeholder="카카오메일 아이디, 이메일, 전화번호"><br/>
+    <input type="password" id="passw1" placeholder="비밀번호"><br/>
+    <input type="radio"> <span id="loginuz"  >로그인 상태 유지</span>
+        <br/>
+    <input type="button" value="로그인" id="loginb"><br/>
+    <input type="button" value="QR코드 로그인" id="qrloginb">
+    <br/><br/>
+    <p id="lastline2"><a href="#" id="frame2"><b>회원가입 </b></a><a href="##" id="frame3"><b>계정 찾기 </b></a> <a href="###"><b>비밀번호 찾기</b></a></p>
+    </div><br/><br/>
+    <p id="lastline">
+    <a href="#">이용약관</a> <a href="#" id="privacy">개인정보 처리방침</a> <a href="#">운영정책</a> <a href="#">고객센터</a> <a href="#">공지사항</a>
+
+    <select id="langg"> <!-- select 화살표 위로 나오게 하는 법? -->
+        <option>한국어</option>
+        <option>English</option>
+        <option>日本語</option>
+        <option>中国人</option>
+    </select></p>
+    <p id="lastline0"></br/>
+    Copyright ® <b style="font-size: 8px;">Kakao Corp.</b> All right reserved.</p>
 </body>
 </html>

@@ -1,1 +1,78 @@
-input
+#frame1 { 
+    box-sizing: border-box;
+    padding: 40px;
+    width: 400px;
+    border: lightgray solid 2px;
+    margin: 0 auto;}
+
+#pagelogo
+    {
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+       font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        width: 400px;
+        font-size: 24px;
+    }
+
+#id1, #passw1 { 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    height: 31px;
+    width: 300px;
+    border: none;
+    border-bottom: lightgray solid 2px;}
+
+#loginuz{/* 여기 왜 중앙 정렬 안되는지? */
+    display: inline-flex; justify-content: center;
+    font-size: 11px; color: gray; font-weight: bold;
+    }
+
+#loginb{
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    margin-top: 31px;
+    background-color: yellow;
+    border: none;
+    height: 33px;
+    width:300px ;}
+
+
+#qrloginb{
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    margin-top: 13px;
+    border: none;
+    background-color: light;
+    height: 31px;
+    width:300px ;}
+
+a{ 
+font-size: 8px;
+text-decoration: none;
+font-weight: bold;
+color: black;}
+
+#frame2, #frame3 {border-right: lightgrey solid 2px;
+margin: 3px;
+padding: 3px;
+}
+
+#lastline2{ 
+    text-align: right; 
+    padding-right: 14px;}
+
+#privacy{font-size: 8.5px;}
+
+#lastline
+{text-align: center;}
+
+#langg{
+    font-size: 9px;
+border: none}
+
+#lastline0{text-align: center;
+font-size: 7px;}
