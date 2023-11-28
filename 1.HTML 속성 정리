@@ -140,3 +140,8 @@
     - 필드 구역 만들기 
     - 필드 제목 
         <legend> </legend>
+
+12.
+    <div> 기본 display:block
+
+    <span> 기본 display:in-line

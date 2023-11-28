@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step3.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="webWrap">
+        <!-- 76p -->
+        <header> <!-- display가 block -->
+            <!-- 시맨틱 태그 : 태그의 의미 부여 - 백엔드 검색엔진[SEO]이 편해짐 -->
+            헤더
+            <nav> 메뉴 </nav> <!-- display가 block -->
+        </header>
+        <main> <!-- display가 block -->
+            <article> <!-- display가 block -->
+                기사문
+                <section>내용구역1</section><!-- display가 block -->
+                <section>내용구역2</section><!-- display가 block -->
+                <section>내용구역3</section><!-- display가 block -->
+                <section>내용구역4</section><!-- display가 block -->
+            </article>
+            <aside> <!-- display가 block -->
+                사이드바
+            </aside>
+        </main>
+        <footer>푸터</footer><!-- display가 block -->
+    </div>
+
+
+
+    <!-- 넌시맨틱 태그 : 시맨틱 태그 X - 프론트 입장에서는 아무 차이 없음 -->
+    <div id="webWrap">
+        <div id="header">
+            헤더
+            <div id="nav"> 메뉴 </div>
+        </div>
+        <div id="main">
+            <div id="article">
+                기사문
+                <div>내용구역1</div>
+                <div>내용구역2</div>
+                <div>내용구역3</div>
+                <div>내용구역4</div>
+            </div>
+            <div id="aside">
+                사이드바
+            </div>
+        </div>
+        <div id="footer">푸터</div>
+    </div>
+</body>
+</html>

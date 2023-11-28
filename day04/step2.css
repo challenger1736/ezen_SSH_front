@@ -1,0 +1,60 @@
+
+
+.container{
+    display: flex;
+    border: 5px solid black;
+/* width : 기본값 100% */
+}
+
+.box{
+    background-color: aqua;
+    color: brown;
+    width: 10%;
+
+}
+
+#flexbox1{justify-content: flex-start;} /* 기본값 왼쪽부터 정렬 */
+
+#flexbox2{justify-content: flex-end;}/* 오른쪽부터 정렬 */
+
+#flexbox3{justify-content: center;}/* 가운데 정렬 */
+
+#flexbox4{justify-content: space-between;}/* 양쪽 끝까지 나눠서 정렬 */
+
+#flexbox5{justify-content: space-around ;}/* 남는 공간 중 (0.5) box1 (1) box2 (1) box3 (0.5) 등분 (space가 자식수와 같음)*/
+
+#flexbox6{justify-content: space-evenly;}
+/* evenly 뜻 = 고르게
+남는 공간 중 (1) box1 (1) box2 (1) box3 (1) 등분 (space가 +1)*/
+
+.flexbox1, .flexbox2, .flexbox3, .flexbox4, .flexbox5
+
+{
+    display: flex;
+    width: 200px;
+    border: 5px solid blue;
+}
+
+.flexbox1{    align-items: stretch; /* 기본 값 */}
+
+.flexbox2{    align-items: start; /* 윗변 정렬 */
+    flex-wrap: wrap;}
+
+.flexbox3{ align-items: end; /* 밑변 정렬 */}
+
+.flexbox4{align-items: center/* 중앙 정렬 */;
+/* justify-content: center; 추가해주면 가로 축 까지 중앙 정렬*/}
+.flexbox5{align-items: baseline/* 텍스트의 선에 맞춰서 배치가 됨 */;
+flex-wrap: wrap;}
+
+/* 여러개 선택자 작성시 (,) 쉼표 구분 */
+.box1, .box2, .box3, .box4, .box5, .box6
+{ background-color: red; color: white; border: white solid 1px;}
+
+.box1 {width: 50px; height: 50px;}
+.box2 {width: 100px; height: 100px; display: inline-block; align-items: center;}
+
+.box4{width: 50px; height: 80px;}
+.box5{width: 100px; height: 150px; display: flex; align-items: center; text-align: center;
+    /* align-items 같이 자식 요소 안에 뭐 둔거 없으면 부모의 align-items:baseline이 의미가 없음.  */}
+

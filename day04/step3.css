@@ -1,0 +1,48 @@
+*{
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px; /* 구분하기 위한 명령어들 */
+} /* 하고 나서 없애기 */
+
+body{ width: 950px;}
+
+#webWrap{
+    width: 900px;/* 가로 */
+    margin: 50px auto;
+    background-color: red;
+}
+
+header{background-color: blue;}
+
+nav{background-color: brown;}
+main{background-color: orange;
+display: flex;
+flex-wrap: nowrap;/* 사이즈나 여백 떄문에 줄인다 */
+height: 800px;
+}
+article{
+    width: 600px;
+}
+
+aside{
+    width: 300px;
+}
+
+footer{background-color: black; color: white;}
+
+#header{background-color: blue;}
+#nav{background-color: brown;}
+#main{background-color: orange;
+display: flex;
+flex-wrap: nowrap;/* 사이즈나 여백 떄문에 줄인다 */
+height: 800px;
+}
+#article{
+    width: 600px;
+}
+
+#aside{
+    width: 300px;
+}
+
+#footer{background-color: black; color: white;}
