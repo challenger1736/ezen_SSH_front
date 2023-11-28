@@ -1,0 +1,110 @@
+/* 주로 사이즈 900~130px 사이 
+(PC기준, 모바일은 더 작음) */
+
+/* 1.선택자를 여러개 선택할때는 , 쉼표 구분
+   2. 하위 선택자를 선택할때는 상위선택자 하위선택자 (띄어쓰기) 구분 */
+
+/*★ 글머리 제거 */
+li{list-style: none;}
+/* a태그의 색상 밑줄 제거 */
+a{color: black; text-decoration: none;}
+
+
+/* ★ 작업용 css */
+/* *{ border: 2px solid red; padding: 10px;} */
+
+
+#header{
+    width: 1280px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+    #main_logo img{
+        margin-top: 5px;
+
+    }
+
+    #header-right-up{ 
+        display: flex;
+        justify-content: flex-end
+        ;}
+
+    #header-right-up span{ margin: 0 10px;} /* ★ 와 이런 방법이 */
+
+    #header-right-down{
+        font-weight: bold   ;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        width: 700px;
+    }
+
+/* #mainimg{ display: block; margin: 0 auto;} */
+
+#mainimg{
+    background-image: url(img/main_img.png);
+    width: 100%; height:  250px; /*★ 이 방법은 사이즈 해야 나옴 */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: white solid 2px;
+}
+   
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;/* 생략 가능 */
+    justify-content: space-between;
+}
+
+    #aside{width: 250px;}
+    #article{width: 1000px;}
+
+
+    #picture{
+        background-color: #516e7f;
+        color: white;
+        padding: 12px;  
+        
+        font-size: 20px;
+
+    }
+
+    ul{ padding: 0px;
+    margin: 0px; /*★ ul 기본 여백 제거 */
+    }
+
+    .menu{ 
+        border-bottom: lightgray 1px solid;
+        padding: 10px
+    }
+
+    #article h3{ font-size: 20px;
+            border-bottom: 2px solid gray;
+        padding-bottom: 15px;}
+
+    #dslrimg{
+        text-align: center;
+    } /* ★ p로 묶고 그 안에 있는 img는 in-line 취급
+    , 그냥 img에 display:block; margin: 0 auto해도 가운데로 옴 */
+
+#footer{ 
+    background-color: rgb(44, 42, 41);
+    margin-top: 20px;
+    color: white;
+}
+#footerbox{
+    padding: 20px 0px;
+    width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer ul{text-align: right;}

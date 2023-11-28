@@ -145,3 +145,12 @@
     <div> 기본 display:block
 
     <span> 기본 display:in-line
+
+13. 레이아웃용 시맨틱 태그
+    1.<header>                                       <div id="header">
+    2.<nav>                                          <div id="nav">
+    3.<main>                                         <div id="main"> 
+    4.<article>                             vs       <div id="article">          
+    5.<aside>                                        <div id="aside"> 
+    6.<footer>                                       <div id="footer">
+    7.<section>                                      <div id="section">
