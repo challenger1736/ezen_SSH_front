@@ -27,9 +27,11 @@ a {text-decoration: none; color: #000;}
             .loginb{
                 background-color: blue;
                 color: white;
-                padding: 2px 6px;
                 border-radius: 3px;
-                margin-right: 6px;
+                display: block;
+                padding: 2px 10px;
+                margin-right: 5px;
+                
             }
 
             .account{
@@ -37,6 +39,7 @@ a {text-decoration: none; color: #000;}
                 border-left: darkgreen solid 1px;
 
                 padding: 2px 6px;
+                
 
             }
         .headerMain {
@@ -65,7 +68,7 @@ a {text-decoration: none; color: #000;}
 #searchframe{
     border: solid 0.5px darkgreen;
     display: flex;
-    width: 206px; /*★ 이거 제대로 아닌듯 */
+    width: 200px; /*★ 이거 제대로 아닌듯 */
 
 }
 

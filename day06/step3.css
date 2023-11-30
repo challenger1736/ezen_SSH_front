@@ -1,0 +1,42 @@
+/* a 마크업 기본css 제거 */
+
+a{color: #000; text-decoration: none;}
+
+/* 해당 선택자에 마우스 올렸을 때 */
+a:hover{
+    text-decoration: underline; color: orangered;
+}
+
+a:active{ color: aqua; }
+
+a:visited{color: blue; }
+
+/* 
+    선택자:hover     : 해당 선택자에 마우스를 올렸을때
+    선택자:active    : 해당 선택자에 마우스 왼쪽 클릭하고 있을 때
+    선택자:visited   : 해당 링크에 방문한 적이 있을 때
+
+*/
+
+#header{background-color: blueviolet;}
+#header > ul{ display: flex; justify-content: center;}
+#header > ul > li{list-style-type: none; margin: 0px 10px; position: relative;}
+
+.subMenu{
+    display: none; /* 숨기기 */
+}
+/* id header의 ul 의 li에 마우스를 올렸을 때, Class subMenu를 display block 한다. */
+    #header >ul>li:hover .subMenu{
+        display: block;
+    }
+.subMenu{
+    padding: 0px;
+    position: absolute; /* 포지션 겹치기 하기를 위해 앱솔루트 한거임 */
+    /* 이걸 하기 위해서 얘 부모메뉴에 position: relative */
+    top:20px;
+    width: 80px;
+    background-color: yellow;
+    
+}
+
+.subMenu li{list-style-type: none;}

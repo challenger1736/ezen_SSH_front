@@ -1,0 +1,54 @@
+
+#header{
+    display: flex;
+    background-color: aqua;
+    z-index: 3; /* 겹쳤을 때 우선 순위 정하기 */
+    position: sticky; /* fixed랑 비슷?, 해당요소가 사라질 떄 위치 고정 */
+    top: 0px; /* sticky 위치 */
+}
+    #header ul li { display: inline-block;}
+
+#popup{
+    background-color: red;
+    width: 200px; height: 200px;
+    position: fixed; 
+    right: 5px; bottom: 10px;
+    z-index: 1; /* 겹쳤을 때 우선 순위 정하기 */
+}
+
+#main{
+    background-color: skyblue;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+
+        .mainBox{ 
+            background-color: greenyellow;
+            width: 100px;
+            height: 80px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        #box2, #box4{
+            position: relative;
+            left: -150px;
+        }
+
+        #box3, #box5{
+            position: relative;
+            right: -150px;
+            top: -80px;
+        }
+
+        #box6{
+            position: relative;
+            top: -80px;
+        }
