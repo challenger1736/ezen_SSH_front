@@ -1,0 +1,91 @@
+/* ---- Mheader ----- S */
+
+#Mheader{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky; /* header 고정 */
+    top: 0px;
+    
+}
+
+    #Mmenu {
+        display: flex; 
+        align-items: center;
+    
+    }
+        #Mlogo{margin: 0px 21px;}
+
+        #Mheader>div>div>a{text-decoration: none; color: #4d5159; 
+            font-size: 18px; font-weight: bold;
+            margin: 14px;
+            
+        }
+        #Mheader>div>div>a:hover {color: gray;}
+
+        #Msearch{
+            border: none;
+            border-radius: 4px;
+            padding: 12px;
+            width: 260px;
+            margin-right: 10px;
+            background-color: #e8e9ec;
+            font-size: 17px;
+        }
+
+        #Mchat{
+            border: #e8e9ec 1px solid;
+            background-color: white;
+            border-radius: 4px;
+            width: 100px; height: 40px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #212124;
+    
+
+        }
+        #Mchat:hover{
+            background-color: rgb(223, 223, 223);
+            color: #4d5159;
+        }
+
+
+/* ---- Mheader ----- E */
+
+/* #Mmain{ margin-top: 62px;} sticky 하니까 필요 없어짐*/
+
+    #Mmain>div{
+        background-color: #fffae0;
+    }
+        #Mmain>div>div{
+        display: flex;
+        width: 1280px;
+        margin: 0 auto;
+        justify-content: space-around;
+        }
+        #MmentS1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+            #MmentS1>div{
+                padding: 20px;
+                line-height: 150%;
+            }
+
+            #Mment1{
+                font-size: 55px;
+                font-weight: bold;
+                color: #212529;
+
+            }
+
+                    
+            #Mment2{
+                font-size: 21px;
+                color: #7c7c7c;
+            }
