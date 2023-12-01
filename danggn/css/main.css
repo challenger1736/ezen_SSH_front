@@ -3,15 +3,20 @@
 /* ---- Mheader ----- S */
 
 #Mheader{
+    
+    background-color: white;
+    position: sticky; /* header 고정 */
+    top: 0px;
+    
+}
+
+#MheaderInner {
     width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    position: sticky; /* header 고정 */
-    top: 0px;
-    
+
 }
 
     #Mmenu {
@@ -21,12 +26,12 @@
     }
         #Mlogo{margin: 0px 21px;}
 
-        #Mheader>div>div>a{text-decoration: none; color: #4d5159; 
+        #Mmenu>div>a{text-decoration: none; color: #4d5159; 
             font-size: 18px; font-weight: bold;
             margin: 14px;
             
         }
-        #Mheader>div>div>a:hover {color: gray;}
+        #Mmenu>div>a:hover {color: gray;}
 
         #Msearch{
             border: none;
@@ -59,35 +64,263 @@
 
 /* #Mmain{ margin-top: 62px;} sticky 하니까 필요 없어짐*/
 
-    #Mmain>div{
+/* 메인 앱 스토어 start */
+.MAppStore{
+   display: flex;
+   margin-top: 30px;
+
+}
+    .MAppStoreImg{
+        position: relative;
+        top: 5px;
+    }
+
+    .MAppStore a{ 
+        display: inline-block;
+        text-align: center;
+        margin-right: 13px;
+        background-color: #ff6f0f;
+        padding: 20px 0px;
+        width:180px;
+        color: white;
+        font-weight: bold;
+        border-radius: 13px;
+        text-decoration: none;
+    }
+
+    .MAppStore a:hover{
+        background-color: #fc6603;
+    } 
+
+    /* 메인 앱 스토어 end */
+
+/* 메인 백 그라운드 컬러 start */
+
+    
+
+    #Mmainrow1{
         background-color: #fffae0;
     }
+
+    #Mmainrow2, #Mmarinrow4{
+        background-color: #f9f9f9;
+    }
+    #Mmainrow3{
+        background-color: #fff8f1;
+    }
+    #Mmainrow5{
+        background-color: #f6fdec;
+    }
+ 
+/* 메인 백 그라운드 컬러 end*/
         #Mmain>div>div{
         display: flex;
         width: 1280px;
         margin: 0 auto;
-        justify-content: space-around;
+        
+    /* 메인 가로 정렬 start*/    
         }
-        #MmentS1{
+        #Mmainrow1>div{
+            justify-content: space-around;
+        }
+
+        #Mmainrow2>div , #Mmainrow4>div{
+            justify-content: center;
+        }
+
+        #Mmainrow3>div, #Mmainrow5>div {justify-content: flex-start;
+            padding-left: 50px;
+        }
+
+    /*  메인 가로 정렬 end*/
+        .MmentS1,.MmentS2{
             display: flex;
             flex-direction: column;
             justify-content: center;
             
         }
-            #MmentS1>div{
+            .MmentS1>div{
                 padding: 20px;
                 line-height: 150%;
             }
 
-            #Mment1{
+            .MmentS2>div{
+                padding: 10px;
+                line-height: 150%;
+            }    
+
+                            /* 메인 폰트 */
+            #Mmentmain{
                 font-size: 55px;
                 font-weight: bold;
                 color: #212529;
 
             }
 
+            .mentLabel{
+                font-weight: bold;
+                font-size: 18px;
+                color: #ff6f0f;
+            }
+
+
+            .Mment1{
+                font-size: 44px;
+                font-weight: bold;
+                color: #212529;
+            }
                     
-            #Mment2{
+            .Mment2{
                 font-size: 21px;
                 color: #7c7c7c;
             }
+                            /* 메인 폰트 끝 */
+
+.MmainpageLinkB{
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #212529;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 13px;
+}
+
+.MmainpageLinkB:hover {
+    background-color: #c7c7c7;
+}
+
+#Md-moimflex{
+    display: flex;
+    justify-content: space-between;
+}
+
+    #Md-moimflex h3{
+        font-size: 15px;
+        font-weight: bold;
+        padding: 8px 0px;
+    }
+
+    #Md-moimflex span{
+        font-size: 12px;
+        line-height: 160%;
+        color: #7c7c7c;
+    }
+
+    /* 메인 끝 */
+
+    /* 푸터 start */
+
+    #Mfooter{ 
+        border-top: #eaebee 1px solid;
+    }
+
+        #Mfooter>div{
+            width: 780px;
+            margin: 0 auto;
+        }
+/* MftTop 시작*/
+
+#MftTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+#MftTopleft{
+    display: flex;
+    padding: 30px 0px;
+}
+
+#MftTopRight{
+    padding-top: 30px;
+}
+
+#MftTopRight  b {font-weight: bold;font-size: 15px;}
+
+#MftTop li{
+    padding: 20px 15px;
+}
+
+#MftTop li a{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+}
+    #MftTop li a:hover{
+        text-decoration: underline;
+    }
+
+/* 메인 앱 스토어 start */
+.MftAppStore{
+    display: flex;
+    margin-top: 20px;
+ 
+ }
+     .MftAppStoreImg{
+         position: relative;
+         width: 20px;
+         top: 5px;
+     }
+ 
+     .MftAppStore a{ 
+         display: inline-block;
+         text-align: center;
+         margin-right: 8px;
+         background-color:  #f2f3f6 ;
+         padding: 10px 0px;
+         width:180px;
+         color: black;
+         font-weight: bold;
+         border-radius: 13px;
+         text-decoration: none;
+     }
+ 
+     .MftAppStore a:hover{
+         background-color: #868b94;
+     } 
+ 
+     /* 메인 앱 스토어 end */
+
+
+/* MftBTM 시작 */
+
+#MftBTM{
+    border-top: #eaebee 1px solid;
+    padding: 20px 0px 80px 0px;
+}
+
+#ceo{
+    font-size: 12px;
+    color: #868b94;
+    line-height: 150%;
+}
+    #ceo b {
+        font-weight: bold;
+    }
+
+    #ceo span {
+        margin: 5px;
+        }
+
+
+    .MftBTMlefta{
+        display: flex;
+    }
+
+
+    .MftBTMlefta >li >a{
+        font-size: 10px;
+        color: #868b94;
+        text-decoration: none;
+        display: block;
+        margin: 10px 20px 0px 0px;
+    }
+
+        #Mprivacy{
+        color: #4d5159;
+        font-weight: bold;
+        }
+
+        .MftBTMlefta a:hover{
+            text-decoration: underline;
+        }
+
