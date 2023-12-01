@@ -1,0 +1,195 @@
+/* *{
+    border: 2px solid red; padding: 10px;
+} */
+
+/* --------------------------공통 부문-------------------------- */
+*{
+    padding: 0px; margin: 0px; /* 기본 여백 제거 */
+    font-family: 굴림;          /* 폰트(웹폰트) */
+    font-size: 12px;            /* 전체적인 폰트 사이즈 */
+    box-sizing: border-box;     /* 여백,테두리를 포함한 사이즈 모델링 */    
+}
+
+a{text-decoration: none; color: black;} /* a태그 색상, 밑줄 제거 */
+
+li{list-style-type: none;}      /* 글머리 제거 */
+
+/* --------------------------헤더-------------------------- */
+
+
+#topMenu{
+    display: flex;
+    justify-content: right; /* flex-end 써도 됨 */
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px; margin-right: 10px;
+}
+    #topMenu span{margin: 10px;}
+
+
+#mainMenu, #mainMenu > ul, #searchBox { 
+    display: flex;
+    align-items: center;
+
+}
+
+#mainMenu {
+    justify-content: space-between;
+    /* 스크롤 사용시 위치 고정 */
+    position: sticky;
+    top : 0px;
+    /* sticky 주의 할 점!![전제 조건]
+        1.상위 요소의 높이 사이즈 안에서 고정.>>>그래서 헤더에서만 놀고 있었음 vs fixed와의 차이점
+        2.위치 속성 필수! : top,right,left,bottom 1개 이상 필수
+        3.상위 요소가 overflow 속성 사용금지.
+    */
+    background-color: rgba(255, 255, 255, 0.8);
+/* opacity : 배경 전체 투명도 */
+
+}
+    #mainMenu > ul {margin-left: 30px; width: 1100px}
+
+        #mainMenu > ul > li{padding: 30px 10px; position: relative; }
+            #mainMenu > ul > li a:hover {color: gray; }
+            #mainMenu > ul > li:hover ul{display: block; }
+
+    #mainMenu > form input{ background-color: transparent;}/* 투명색!! */
+
+#searchBox{ border-bottom: black 1px solid; margin-right: 20px;}
+#searchBox > input { border: none; padding: 8px;}
+*:focus{ outline: none;} /* 이거 까먹었었음 기억하기! :=뜻, 상황일 때*/
+
+.DROPlist{
+    display: none; /* none하는 놈을 항상 앱솔루트 한다! 
+    + 얘 부모에 position: relative해야 아래 메뉴 조금이라도 이동 가능함 */
+background-color: white;
+position: absolute;
+width: 90px;
+padding-top: 20px;
+top:60px;
+left: -10px;
+}
+
+    .DROPlist li{text-align: center; margin-bottom: 12px;}
+
+.fontRed{ color: red;}
+/* --------------------------본문-------------------------- */
+#mainWrap{
+    width: 1620px; margin: 100px auto;
+}
+
+#mainWrap .title{
+    font-size: 18px; font-weight: bold;
+    text-align: center;
+}
+
+#mainWrap .comment{
+    text-align: center; color: #858585;
+    margin-top: 20px;
+}
+
+#mainWrap .items{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item > img {
+    width: 100%; /* 이미지 설정안해주면 사이즈의 기본값이 원본 사진이라서 설정을 꼭 해줘야함. */
+}
+
+.item { margin-bottom: 100px; width: 370px;}
+
+.colorReview{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    padding right: 5px;
+}
+
+.colorReview > .review{ color: #999999;}
+
+.color span{
+    width: 10px; height: 10px;
+    display: inline-block; 
+    border: #858585 1px solid;}
+
+
+.nameSize{
+    margin: 10px 0px 10px 0px;
+}
+
+.nameSize .prdSize {
+    font-size: 11px; color: #999999;
+}
+
+.price > del {
+    color: #999999;
+}
+
+.price{ position: relative; margin-bottom: 10px;}
+
+.price > .discount {
+    position: absolute;
+    right: 0px; top: 0px;
+    color: red; font-size: 15px; font-weight: bold;
+}
+
+/* --------------------------푸터------------------------- */
+#footer { /* 상단 푸터 */
+    background-color: #f7f7f7;
+}
+
+#footer #ftInner{
+    width: 1400px; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #ftInner{ padding: 80px 50px;}
+        #ftInner > div> h3 { padding: 5px 0px;
+        font-size: 17px;
+        font-weight: bold;}
+        #ftInner > div> p { padding: 3px 0px;}
+
+#addr{  /* 하단 푸터 */
+    margin: 20px 0px 50px 0px;
+    color: #999999; text-align: center;
+}
+
+#popup{
+    position: fixed;
+    right: 0px;
+    top: 50%
+
+}
+
+#popup > li{
+    width: 50px; height: 50px;
+    background-color: #fafafa;
+    border: #858585 1px solid;
+    position: relative;
+}
+#popup > li img { width: 100%;
+display: block; padding: 10px;}
+
+
+#popup > li:hover span{
+    display: block;
+}
+
+
+#popup > li span {
+    position: absolute;
+    top: 15px; right: 50px;
+    background-color: black;
+    border-radius: 3px;
+    width: 80px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 6px;
+    display: none;
+}
+
