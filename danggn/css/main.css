@@ -111,6 +111,8 @@
     #Mmainrow5{
         background-color: #f6fdec;
     }
+
+   
  
 /* 메인 백 그라운드 컬러 end*/
         #Mmain>div>div{
@@ -324,3 +326,160 @@
             text-decoration: underline;
         }
 
+
+/* ---------------------------------------회사 소개 ----------------------------------------- */
+
+
+#Mmain22{
+    display: flex;
+ /*    justify-content: center;
+    flex-wrap: wrap; */
+
+    flex-direction: column;
+    align-items: center; /* ??? 이거 하니 중앙 정렬된 이유가 뭐지 아 column을 바꿔서 그렇구만*/
+    }
+
+
+
+#Mmainrow6 {
+    width: 1280px;
+}
+
+    #Mmainrow6{ font-size: 52px; font-weight: bold; line-height: 150%; padding: 120px 0px;}
+
+#Mmainrow7Img{ width: 1280px; border-radius: 40px;}
+
+#Mmainrow8{ font-size: 25px; font-weight: bold; line-height: 150%; padding: 30px 0px; width: 1280px;}
+
+#Mmainrow9{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+    #Mmainrow9>div {
+        width: 600px;
+    }
+
+    #Mmainrow9 img {
+        width: 600px;
+        border-radius: 30px;
+    }
+
+
+    #Mmainrow9L{ display: flex; flex-direction: column; justify-content: flex-end; }
+
+    .Mmainrow9-1{ font-size: 20px; font-weight: bold;}
+
+    #Mmainrow9-1{margin-bottom: 30px;}
+
+    .Mmainrow9-2{ font-size: 40px; font-weight: bold; line-height: 140%; margin-bottom: 30px;}
+
+    #Mmainrow11{margin-top: 200px;
+    display: block; width: 1280px;
+    }
+
+    #Mmainrow9 p{ font-size: 18px; line-height: 160%; color: #4d5159;}
+
+
+#Mmainrow10{
+    text-align: center;
+    background-image: url(../img/intro/81ce43ec-15a7-448d-829d-f5c7ecdf2b88_company_03.jpg);
+    background-repeat: no-repeat;
+    background-position: center; /* 포지션 센터 기억하기 */
+    background-size: cover /* 이거 헷갈리네 */;
+    width: 100vw; /* ★★★★ 반응형 이미지 사이즈 만들기 */
+
+    
+}
+
+    #Mmainrow10 >div{padding: 100px}
+
+        #Mmainrow10 >div>div{ font-size: 45px; margin: 20px; color: white; font-weight: bold;}
+
+        #Mmainrow10 p{ font-size: 17px; line-height: 150%; color: white;}
+
+#Mmainrow12{
+    width: 1280px;
+display: flex;
+flex-wrap: wrap; }
+
+    #Mmainrow12>div{
+        background-color: #f2f3f6;
+        width: 510px;
+        height: 300px;
+        border-radius: 30px;
+        padding: 50px;
+        margin: 0px 30px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    
+    #Mmainrow12>div>div{
+        font-size: 35px;
+        line-height: 135%;
+        font-weight: bold;
+    }
+
+
+
+
+#Mmainrow13{
+    margin-top: 100px;
+    background-color: #f7f8fa;
+    width: 100%; /* flex를 했기 떄문에(column) width안하면 사이즈 줄어드는것 같음. */
+}
+
+    #Mmainrow13>div{
+        width: 1280px;
+        margin: 0 auto; /* margin 0 안써서 많이 돌아옴 */
+        text-align: center;
+        padding: 150px 20px;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+
+    #MInvestor img{display: inline-block; width: 300px; padding: 20px;}
+
+
+    #MInvestor p{padding-bottom: 150px;}
+
+
+#Mmainrow14{
+    background-image: url(../img/intro/e5c5e6ce-a7f9-42c3-8312-ca9e0ec05290_company_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    text-align: center;
+    padding: 100px 0px;
+
+}
+
+
+#Mmainrow14 p{ 
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#Mmainrow14 a{text-decoration: none; color: black; font-weight: bold;}
+
+#Mmainrow14>div>a:hover{ color: rgb(92, 92, 92);}
+
+#Mnewsicon{width: 21px; position: relative; top:4px}
+
+#MNewswindows{display: flex; justify-content: center;}
+
+.MdanggnNews{ padding: 20px 25px; background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px; text-align: left; margin: 10px;
+    width: 185px; height: 120px;
+}
+
+.MdanggnNews>a{
+    display: flex; flex-direction: column; justify-content: space-between;}\
