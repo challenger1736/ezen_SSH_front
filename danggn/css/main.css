@@ -7,6 +7,7 @@
     background-color: white;
     position: sticky; /* header 고정 */
     top: 0px;
+    z-index: 2; /* position: absolute */
     
 }
 
@@ -515,7 +516,8 @@ flex-wrap: wrap; }
 
 #Mfooter2Top>div{display: flex; flex-wrap: wrap;}
 
-#Mfooter2Top>div>p, #Mfooter2Top>div>div{padding: 100px 50px 50px 0px;} 
+#Mfooter2Top>div>p{padding: 95px 50px 50px 0px;}
+#Mfooter2Top>div>div{padding: 100px 50px 50px 0px;} 
 
 #Mfooter2Top a{text-decoration: none; color: #000;}
 
