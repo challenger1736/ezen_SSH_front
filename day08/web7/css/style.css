@@ -1,0 +1,121 @@
+body {font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #121212;
+}
+
+.ffJosefin{
+    font-family: 'Josefin Sans', sans-serif ;
+}
+
+.innerWrap{
+    width: 1240px; margin: 0 auto;
+    padding: 80px 20px 0px;
+}
+
+main h2{
+    text-align:  center;
+    font-size:  60px;
+    letter-spacing: 0.05em; /* 글자 간격 */
+    margin: 80px;
+}
+
+header{
+    background: url(../images/KakaoTalk_20231204_110243473.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+header .innerWrap{
+    height: 720px;
+    position: relative;
+}
+
+header .scroll { /* 헤더 안에 있는 이너 */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .scroll img {
+    margin-top: 8px;
+}
+
+header h1 {
+    padding-top:  120px;
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.msgSec{
+    background-color: #fbfaf7 !important;/* !important = 가장 중요 */
+}
+
+.msgSec p { text-align: center;
+line-height: 1.75;
+margin-bottom: 40px;}
+
+.msgSec p.illust{ /* p.illust // p태그 id illust // 붙여서 쓰면 이렇게 됨 */
+    margin-top: 80px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+/* 
+    p.illust{}          : p 요소의 class 명이 illust 이면
+    .illust{}           : 전체요소의 class 명이 illust 이면
+*/
+
+/* 150p
+    !important > style 속성 > id > class > 태그 > *
+*/
+
+.msgSec p.illust::before{
+    content: url(../images/deco_left.png);
+    position: absolute;
+    left: 330px;
+    bottom: -30px;
+}
+
+.msgSec p.illust::after{
+    content: url(../images/deco_right.png);
+    position: absolute;
+    right: 320px;
+    bottom: -30px;
+}
+
+/* 151~152p 가상 요소 선택자 */
+
+/* 
+    ::before : 요소 앞 부분에 내용을 html에 가상으로 넣어주기
+    ::after : 요소 앞 부분에 내용을 html에 가상으로 넣어주기
+
+        content : 가상요소의 실질적 내용물
+ */
+ /* 위치 잡아야 하기 때문에 position과도 같이 잘 씀 */
+
+ .dateSec{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+ }
