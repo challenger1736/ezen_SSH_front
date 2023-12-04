@@ -119,3 +119,175 @@ margin-bottom: 40px;}
     background-color: #ffffff;
     padding-bottom: 120px;
  }
+
+ .dateSec .layoutWrap{
+    display: flex; /* flex-direction: column; */
+ }
+
+ .dateSec .layoutWrap>p{
+    flex-basis: 735px;}
+
+ .dateSec .layoutWrap>div{
+    flex-basis: 465px;
+    padding-top: 100px;
+}
+
+    /* 
+    flex-basis: 465px;
+        vs
+    width: 465px
+
+        차이점  1.: flex-direction : column 일 떄
+                width : 고정 vs flex-basis : 전체사이즈 늘어남
+                2.: 요소보다 더 큰 컨텐츠가 들어왔을 때,
+                width : 컨텐츠가 밖으로 벗어남(고정) vs flex-basis : 같이 늘어남
+
+    */
+
+    .dateSec .dateDetailSec {
+        font-size: 72px;
+        margin: 0 0 170px -100px;
+        background: #ffffff;
+        padding: 40px 64px;
+        line-height: 1.2;
+    }
+
+    .word1 {font-size: 50px;}
+    .word2 {font-size: 40px;}
+    .word3 {font-size: 60px;}
+
+    .accessSec{
+        margin-left: 48px;
+    }
+
+    .accessSec h3{
+        color: #cfafa3;
+        font-size: 55px;
+        letter-spacing: 0.05em;
+        margin-bottom: 8px;
+    }
+
+    .accessSec p{
+        line-height: 1.6;
+    }
+
+    .formsec{
+        background-color: #efe8d9;
+        padding-bottom: 60px;
+    }
+
+    form {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    input[type="text"], /* input중에서 타입이 텍스트 이면 */
+    input[type="emial"],
+    select,
+    textarea{
+        border: 1px solid #cccccc;
+        background-color: #ffffff;
+        width: 100%;
+        margin-top: 5px;
+        padding: 4px 8px;
+    } 
+
+    input[type="radio"], 
+    input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        vertical-align: baseline;
+        margin-right: 4px;
+    }
+
+    .attendRadio{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .attendRadio label{
+        margin: 0 20px;
+        font-size: 24px;
+    }
+
+    
+    .attendCheck label{
+        margin-right: 24px;
+    }
+
+    select{
+        background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px;
+    }
+
+    textarea{
+        height: 148px;
+        margin-bottom: 30px;
+    }
+
+    form>p{
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+.submitBtn{
+    text-align: center;
+
+}
+
+ input[type="submit"]{
+    background-color: #121212;
+    color: #ffffff;
+    padding: 18px 80px;
+ }
+
+footer{
+    background-color: #c7887f;
+    color:#f3e9e5;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+
+.dateSec{
+    margin-bottom: 480px;
+}
+
+.dateSec::after{
+    content: ""; /* 배경을 넣을거라 content가 없는 상태 */
+    position: fixed; /* 스크롤이 움직여도 고정 */
+    left : 0;
+    top : 0;
+    width: 100%;
+    height: 100%;   /* 화면 가득채우기 */
+    background: url(../images/bg.jpg) no-repeat center/cover;
+    z-index: -1; /* 기본 요소들은 1, 그 보다 아래에 배치 */
+}
+
+/* 트랜지션 애니메이션 효과 */ /* 버튼 */
+input[type="submit"]:hover{
+    background-color: #c7887F;
+    margin-left: 20px;
+    transition-property: background-color, margin-left; /* 또는 all */
+    transition-duration: 300ms; /* 0.3초 */
+    transition-timing-function: ease-in; /* 시작 천천히 끝은 빨리 */
+    transition-delay: 0ms;
+}
+
+/* 167p 키 프레임 애니메이션 효과 설정하기 */
+@keyframes scrollAnimation{
+    0%{transform: scaleY(0);        /* 시작점 */
+        transform-origin: top;}
+    50%{transform: scaleY(1);       
+        transform-origin: top;}     /* 가운데 이전*/
+    50.1%{transform: scaleY(1);
+        transform-origin: bottom;}  /* 가운데 이후 */
+    100%{transform: scaleY(0);
+        transform-origin: bottom;}  /* 종료점 */
+
+}
+/* 169p 키프레임에 애니메이션 적용하기 */
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}

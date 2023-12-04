@@ -53,10 +53,10 @@
             <p><img src="images/date_img.jpg" alt=""></p>
             <div>
               <p class="dateDetailSec">
-                3023.8.8 Thu<br>
-                Start 18:30-
+                3023.8.8 <span class="word1" >Thu</span><br>
+                <span class="word1" >Start</span> <span class="word3" >18:30-</span>
               </p>
-              <section>
+              <section class="accessSec">
                 <h3>Access</h3>
                 <p>
                   나뭇잎길 1-2-3<br>
@@ -68,31 +68,31 @@
           </div>
         </div>
       </section>
-      <section id="formArea">
+      <section class="formsec" id="formArea">
         <div class="innerWrap">
           <h2>RSVP</h2>
           <form action="" method="">
-            <p>
+            <p  class="attendRadio"> 
               <label><input type="radio" name="attend" value="참석" checked="checked"/>참석</label>
               <label><input type="radio" name="attend" value="불참"/>불참</label>
             </p>
             <p>성함<input type="text" name="user_name" /></p>
             <p>메일 주소<input type="email" name="user_mail" /></p>
-            <p>자신의 유형 
+            <p >자신의 유형 
               <select name="user_type">
-                <option value="초식 동물">초식 동물</option>
-                <option value="육식 동물">육식 동물</option>
-                <option value="인간">인간</option>
+                <label><option value="초식 동물">초식 동물</option></label>
+                <label><option value="육식 동물">육식 동물</option></label>
+                <label><option value="인간">인간</option></label>
               </select>
             </p>
-            <p>
+            <p  class="attendCheck">
               알레르기가 있는 음식
-              <input type="checkbox" name="allergy" value="달걀">달걀
-              <input type="checkbox" name="allergy" value="우유">우유
-              <input type="checkbox" name="allergy" value="밀">밀
-              <input type="checkbox" name="allergy" value="대두">대두</p>
+              <label><input type="checkbox" name="allergy" value="달걀">달걀</label>
+              <label><input  type="checkbox" name="allergy" value="우유">우유</label>
+              <label><input  type="checkbox" name="allergy" value="밀">밀</label>
+              <label><input type="checkbox" name="allergy" value="대두">대두</p></label>
             <p>메시지<textarea name="message"></textarea></p>
-            <p><input type="submit" value="Send"></p>
+            <p class="submitBtn"><input type="submit" value="Send"></p>
           </form>
         </div>
       </section>
