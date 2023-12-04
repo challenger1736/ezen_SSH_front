@@ -483,14 +483,14 @@ flex-wrap: wrap; }
         width: 185px; height: 120px; line-height: 130%; font-size: 15px;
     }
 
-/*     .MdanggnNews>div{display: flex; flex-direction: column; align-content: space-between;}
+    .MdanggnNews > div{display: flex; flex-direction: column; justify-content: center; }
 
 
-    .MdanggnNews>div>div{width: 145px;}
+    .MdanggnNews > div > div{width: 145px;}
 
     .MdNewsdate{
         padding-top: 5px;
         font-size: 12px; color: #9ba7b8;
-    } */
+    }
  이 쪽 부분 모르겠다...
 
