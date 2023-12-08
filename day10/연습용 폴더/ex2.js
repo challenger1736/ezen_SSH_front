@@ -23,3 +23,29 @@ console.log(10%4)
 
 console.log(true)
 console.log(false)
+
+console.log(!false) /* true */
+console.log(!true) /* false */
+
+console.log(typeof('문자열'))
+console.log(typeof(273))
+console.log(typeof(true)) /* 자바할 때 수동이기떄문에 자주 쓰임. 자료형 확인 */
+
+const name = "name이라는 이름의 상수를 선언해볼게요."
+
+/* const name = "한번 더 선언해볼게요." Uncaught SyntaxError: Identifier 'name' has already been declared */
+
+/* const name2 
+선언 안해서 에러 뜸 Uncaught SyntaxError: Missing initializer in const declaration (at ex2.js:38:7) */
+
+let name3
+var name4       /* const 아니고 let var등 변수는 선언안해도 에러 안뜸 */
+
+name = "그 값을 변경해 볼게요"
+/* ex2.js:44 Uncaught TypeError: Assignment to constant variable. at ex2.js:44:6 이건 해석하기도 어렵네, 상수 변수에 할당 외우기 */
+
+
+
+
+
+
