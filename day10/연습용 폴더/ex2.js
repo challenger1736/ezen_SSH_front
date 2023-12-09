@@ -41,9 +41,17 @@ const name = "name이라는 이름의 상수를 선언해볼게요."
 let name3
 var name4       /* const 아니고 let var등 변수는 선언안해도 에러 안뜸 */
 
-name = "그 값을 변경해 볼게요"
+/* name = "그 값을 변경해 볼게요" */
 /* ex2.js:44 Uncaught TypeError: Assignment to constant variable. at ex2.js:44:6 이건 해석하기도 어렵네, 상수 변수에 할당 외우기 */
 
+let value = 10
+console.log(value)/* 10 */
+value += 10 
+console.log(value)/* 20 */
+value -= 10 
+console.log(value)/* 10 */
+value /= 10
+console.log(value)/* 1 */
 
 
 
