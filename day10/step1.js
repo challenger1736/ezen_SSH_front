@@ -66,7 +66,7 @@ console.log(typeof '안녕하세요');
 console.log(typeof 50);         console.log(typeof(50-30));
 console.log(typeof false);      console.log(typeof(50<30));
 
-console.log(typeof 50-30) // NaN 나옴 뜻 = 잘못된 입력을 받았음. (typeof 는 단항연산자)
+console.log(typeof 50-30) // NaN 나옴 (typeof 는 단항연산자)
 
 console.log(typeof(typeof(50-30)))// number가 나올거니 number는 string이므로 string으로 나옴
 

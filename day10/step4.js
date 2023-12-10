@@ -48,7 +48,22 @@ let 천원 = parseInt((number8-(십만원*100000)-(만원*10000))/1000)
 /* document.write(`십만원 짜리 개수 :` +십만원+ `만원 짜리 개수 :` +만원+ `천원 짜리 개수 :` +천원) *//* 이렇게 양옆으로 ++ 적어줘야함 이렇게 할빠에는 ${단일}로 쓰는게 나음 */
 /* document.write(`십만원 짜리 개수 : ${십만원} 만원 짜리 개수 : ${만원} 천원 짜리 개수 : ${천원}`) */
 
+// 강사님 정답 -문제6 : prompt 함수 로 십만원 단위의 금액을 입력받아 지폐 개수 세기[연산자 사용] 입력예) 356789  , 출력 예) 십만원:3장 만원:5장 천원:6장
+    // 1. 금액 자릿수[인덱스] 이용 방법 
+/*
+let 금액1 = prompt('십만원 단위의 금액 입력 : ');   
+console.log( `십만원:${금액1[0]}장 , 만원 : ${금액1[1]}장 , 천원 : ${금액1[2]}장` );
+*/
+    // 2. 연산 
+/*
+let 금액2=  Number( prompt('십만원 단위의 금액 입력 : ') ) ;
+let 십만원권 = parseInt( 금액2/100000 ); // 십만원 단위  : parseInt(금액/100000)
+금액2 -= (십만원권*100000);  // 금액(원금)에 십만원권 제외한 금액에서 만원권 계산 
+let 만원권 = parseInt(금액2/10000);     // 만원 단위 : parseInt(금액/10000)
+금액2 -= (만원권*10000);    // 금액(원금)에 만원권 제외한 금액에서 천원권 계산 
+let 천원권 = parseInt(금액2/1000);      // 천원 단위 : parseInt(금액/1000)
 
+console.log( `십만원:${ 십만원권 }장 , 만원 : ${ 만원권 }장 , 천원 : ${ 천원권 }장` );
 
 
 /* 문제 7 */
@@ -56,6 +71,8 @@ let 천원 = parseInt((number8-(십만원*100000)-(만원*10000))/1000)
 let password=prompt("패스워드를 입력하세요")
 
 document.write(`${id+password=="admin1234" ? true : false}`) */
+
+/* 강사님 정답 : console.log( `로그인 결과 : ${ 아이디 == 'admin' && 비밀번호 == 1234 } `);  */ // O
 
 /* 문제 8 */
 /* let number9=Number(prompt("정수를 입력하세요(홀수이면서 7의배수는 true)"))
@@ -87,7 +104,9 @@ document.write(`${number10}과 ${number11} 중 더 큰 수는? ${number10>number
 let number13=Number(prompt("10번 문제 가장 큰 수는? 두번째"))
 let number14=Number(prompt("10번 문제 가장 큰 수는? 세번째"))
 
-console.log((number12>=number13 && number12>=number14) ? number12 : (number13>=number14 && number13>=number12) ? number13 : (number14 >= number12 && number14>=number13)? number14: "none") */
+console.log((number12>=number13 && number12>=number14) ? number12 :
+(number13>=number14 && number13>=number12) ? number13 :
+(number14 >= number12 && number14>=number13)? number14: "none") */
 
 // 1. 변수[저장/기억] 활용 [ 가장 큰 수 기억하는 방법 ]
 
