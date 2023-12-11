@@ -165,3 +165,4 @@ console.log( ex2Value1>ex2Value2 ); // 만약에 10과 20을 입력했다면 fal
 console.log(ex2Value1>ex2Value2 ? ex2Value1 : ex2Value2 );
 
 document.write(`<h3>예제 2 결과 : ${ex2Value1 > ex2Value2 ? ex2Value1 : ex2Value2 }</h3>`)
+
