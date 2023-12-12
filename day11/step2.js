@@ -95,7 +95,9 @@
                 if(month<=8){console.log('여름입니다.')}
                 else if(month>=9){
                     if(month<=11){console.log('가을입니다.')}
-                    }}}
+                    }
+                }
+            }
         else{console.log('겨울입니다.')}   // 이렇게 하는것 보다
 
         if(month>=3&&month<=5){console.log('봄입니다.')}

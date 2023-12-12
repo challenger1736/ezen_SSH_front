@@ -18,7 +18,7 @@ console.log()
 // 문제1 : 3개 점수를 각input으로 입력받아 총점과 평균 span에 출력하시오.
     // - 함수선언
 function 연습버튼을클릭했을때실행되는코드모음상자(){
-    // 1.[입력]  // input에 입력받은 값 가져오기 [ ]
+    // 1.[입력]  // input에 입력받은 값(.value) 가져오기 [ ]
     let value1 = document.querySelector('#input1').value;
     let value2 = document.querySelector('#input2').value;
     let value3 = document.querySelector('#input3').value;
