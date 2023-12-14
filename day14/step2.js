@@ -292,3 +292,5 @@ function 문제9(){
     console.log(tableObj);
     tableObj.innerHTML = html;
 }
+
+/* querySelector (안의 값이) 없어도 innerHTML부분을 문제라고 한다. 그래서 찾기 어려움. */

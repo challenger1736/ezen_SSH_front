@@ -9,11 +9,13 @@ function 문제1(){ // f start
     for( let i = 1 ; i <=text1 ; i++ ){output += '*'} 
 
 
+    document.querySelector('table').innerHTML = output
+
+    document.querySelector('#text1').value = ''
+
 }   
 
-document.querySelector('table').innerHTML = output
 
-document.querySelector('#text1').value = ''
 
 // 문제2) 입력받은 수 만큼 * 출력 [  - 3줄(3배수)마다 줄바꿈 ]
 // 문제3) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]
