@@ -5,16 +5,16 @@
         1. for(let i =0; i<배열명.length ; i++){}
 
         [배열, 객체]
-        2. for(let i in 배열명){} //but 배열 또는 객체만 가능
+        2. for(let i in 배열명){} //but 배열 또는 객체만 가능    -i 에 배열안의 인덱스가 나열됨
 
-        3. for( let v of 배열명){}
+        3. for( let v of 배열명){}                              -v에 배열안의 값들이 나열됨
 
         4. while문
             
-            while(조건문){실행문;}
+            while(조건문){실행문;} // 조건문 true 면 실행문 실행
             1. for  처럼 사용 [빈도 적다.]
                 초기값
-                while(조건문){실행문;증감식;}
+                while(조건문){실행문;증감식;} 
             2. 무한루프 [빈도 높음.]
                 while(true){실행문;}
                 for(;;){실행문;}
@@ -32,7 +32,7 @@ for (let i of todos){console.log(i);}
 
 for (const i in todos){
     console.log(todos[i]);
-} /* 나갔다가 선언하고 나갔다가 선언하고 이런느낌 인듯하기에 const도 가능한 것 같음 */
+} /* 나갔다가 선언하고 나갔다가 선언하고 이런느낌 인듯하기에 const도 가능한 것 같음 - of도 마찬가지 */
 
 // 4
 let i = 0;
@@ -48,7 +48,7 @@ while(true){alert(`${j}번째 반복입니다.`); j++} */
 
 /* let p = 0;
 while( confirm('계속 진행할까요?')){//확인= true, 취소 = false - while은 false가 될 때까지 실행하므로 취소누르면 더 이상 안뜸.
-    alert(`${p}번째 반복 입니다.`)
+    alert(`${p}번째 반복 입니다.`);
     p++;
 } */
 
@@ -75,7 +75,7 @@ while( confirm('계속 진행할까요?')){//확인= true, 취소 = false - whil
 */
 
 
-for (let m = 0; true ; i++){
+for (let m = 1; true ; m++){
     alert(`${m}번째 반복문입니다.`)
 
    ;
