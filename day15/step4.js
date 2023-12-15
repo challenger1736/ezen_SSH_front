@@ -108,8 +108,8 @@ function 출력(){            /* 출력 펑션 */
 function 천단위(i){         /* 천단위 로직 */
     let 천단위배열 = [];
     for(let a = 금액배열[i].length-1 ; a>=0 ; a--){
-    if(a%3==0 && a != 0 ){ 천단위배열.push(`${금액배열[i][a]},`)}
-    else{ 천단위배열.push(`${금액배열[i][a]}`)}
+    if(a%3==0 && a != 0 ){ 천단위배열.push(`${금액배열[i][(a-금액배열[i].length+1)*-1]},`)}
+    else{ 천단위배열.push(`${금액배열[i][(a-금액배열[i].length+1)*-1]}`)}
 }
 /* 여기서 return 천단위배열 하면 3,,3,3,3 이런식으로 나옴 */
 
@@ -136,8 +136,8 @@ function 천단위2(test){         /* 천단위 합계 로직 */
     let 천단위배열 = [];
     let st = String(test)
     for(let a = st.length-1 ; a>=0 ; a--){
-    if(a%3==0 && a != 0 ){ 천단위배열.push(`${st[a]},`)}
-    else{ 천단위배열.push(`${st[a]}`)}
+    if(a%3==0 && a != 0 ){ 천단위배열.push(`${st[(a-st.length+1)*-1]},`)}
+    else{ 천단위배열.push(`${st[(a-st.length+1)*-1]}`)}
 }
  
  /* 천단위배열의 각 자리수를 다 연결 연산자로 더하는 로직 */
@@ -157,5 +157,17 @@ return 천단위배열플러스
 
 
 /* 날짜 오름차순으로 출력되게 할 것 */
+
+let emptys = '';
+
+/* 더 큰 수 오면 바뀌는 로직 */
+ /*  3개 일 때 강사님 풀이법 */
+
+ /*    if(p1>p2) {let temp = p1; p1=p2; p2=temp;}
+    if(p1>p3) {let temp = p1; p1=p3; p3=temp;}
+    if(p2>p3) {let temp = p2; p2=p3; p3=temp;} */
+
+for( i = 0 ; i < .length ; i++ )
+
 
 
