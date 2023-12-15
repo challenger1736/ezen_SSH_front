@@ -87,6 +87,7 @@ function 출력(){            /* 출력 펑션 */
 
     document.querySelector('#divt3').innerHTML = output
 
+    console.log(document.querySelector(`#dateInput`).value)
 
     document.querySelector('#dateInput').value = ""
     document.querySelector('#contentInput').value = ""
@@ -98,7 +99,7 @@ function 출력(){            /* 출력 펑션 */
     
 
     
-    
+    //날짜배열펑션()
 }
 /////////////////////////////////////////////////////////////
 /* 그냥 일단 금액 천단위로 만들어주는 함수 만들어보기 */
@@ -148,6 +149,8 @@ function 천단위2(test){         /* 천단위 합계 로직 */
     }
  
 /* 천단위배열[0]+천단위배열[1]~~~~~천단위배열[천단위배열.length-1] */
+
+
  
 return 천단위배열플러스
 
@@ -158,7 +161,7 @@ return 천단위배열플러스
 
 /* 날짜 오름차순으로 출력되게 할 것 */
 
-let emptys = '';
+
 
 /* 더 큰 수 오면 바뀌는 로직 */
  /*  3개 일 때 강사님 풀이법 */
@@ -167,7 +170,17 @@ let emptys = '';
     if(p1>p3) {let temp = p1; p1=p3; p3=temp;}
     if(p2>p3) {let temp = p2; p2=p3; p3=temp;} */
 
-for( i = 0 ; i < .length ; i++ )
 
 
 
+/* 날짜배열[0][1] 과 날짜배열의[1][1] 비교 .... >>> 결국 날짜배열의[날짜배열.length-1][i]*/
+/* i 인덱스값 자체를 바꾸면 제일 좋음 */
+/* function 날짜배열펑션(a){
+        날짜배열스플릿 = 날짜배열.split(`-`)
+    for( let i = 0 ; i < 날짜배열[날짜배열.length-1] ; i++ ){
+        
+        
+    }
+
+return 날짜배열[a] i값 자체를 바꿨을 경우 
+} */ 
