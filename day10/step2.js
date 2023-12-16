@@ -102,6 +102,9 @@ list += `</ul>`;
 
 document.write(list);
 
+/* 이런식으로 div나 ul을 넣기도함!!! >> js에서 넣는 이유 = 기능 작동시
+어떤 자료를 추가하기 위해 어디에? document.write로(body) list를*/
+
 //예제1 : 2개의 숫자를 입력받아 더한 결과 값을 html에 <h3>안에 출력
 
 /* let number1=Number(prompt("첫번째 숫자 "))

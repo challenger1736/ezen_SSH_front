@@ -29,6 +29,9 @@ console.log(false);
 console.log(52>273);
 console.log(52<273);
 
+console.log(String(52>273)[0]);
+console.log(typeof(52<273));
+
 console.log(10===10); console.log(10==10);
 console.log(10==="10"); console.log(10=="10");//false, true
 
@@ -66,7 +69,7 @@ console.log(typeof '안녕하세요');
 console.log(typeof 50);         console.log(typeof(50-30));
 console.log(typeof false);      console.log(typeof(50<30));
 
-console.log(typeof 50-30) // NaN 나옴 (typeof 는 단항연산자)
+console.log(typeof 50-30) // NaN 나옴 (typeof 는 단항연산자 = Number -30이 되므로 Not a Number)
 
 console.log(typeof(typeof(50-30)))// number가 나올거니 number는 string이므로 string으로 나옴
 
@@ -88,4 +91,7 @@ console.log(false==0) ; // false는 0과 같다. true는 1 [2진수 -> 0,1 -> fa
 console.log(false===0) ; // 얘는 자료형이 다르므로 false는 불이고 0은 number
 console.log(""==[]) // 빈문자열 과 빈배열과 같은 데이터 의미
 console.log( 0 ==[] ) // 0과 빈 배열과 같은 데이터 의미
+
+
+// 이게 힌트였네, 배열, 문자열, 수 쓸때 변수, 상수로 지정할 것들 [], "", 0 ;
 
