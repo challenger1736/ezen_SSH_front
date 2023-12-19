@@ -36,38 +36,81 @@ for(let m =1 ; m<=10 ; m++){
 console.log(output); // 55(세 개 다 켜면 85)
 
  */
-// 문제1) 입력받은 수 만큼 * 출력 
-
-const i = Number(prompt('입력받은 수 만큼 * 출력'));
-let output = `*`;
-; 
-
-// 문제2) 입력받은 수 만큼 * 출력 [  - 3줄(3배수)마다 줄바꿈 ]
-// 문제3) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]
+// 문제1) 입력받은 수 만큼 ★ 출력 
 /* 
-*
-**         
-***      
-****   
-*****
+const i = Number(prompt('입력받은 수 만큼 ★ 출력'));
+let output = ``;
+for(a=0 ; a<i ; a++ ){ output += '★'};
+document.querySelector('#result').innerHTML = output
+ */
+// 문제2) 입력받은 수 만큼 * 출력 [  - 3줄(3배수)마다 줄바꿈 ]
+/* 
+const i = Number(prompt('입력받은 수 만큼 ★ 출력'));
+let output = ``;
+for( a=0 ; a<i ; a++ ){ output += `★`
+    if((a+1)%3==0 && a!=0){output += `<br/>`}
+};
+document.querySelector('#result').innerHTML = output
+ */
+// 문제3) 입력받은 줄 수 만큼 ★ 출력  [ ex) 5 ]
+
+/* const i = Number(prompt('입력받은 수 만큼 ★ 출력'));
+let output = ``;
+for( a=0 ; a<i ; a++ ){
+    for( b=0 ; b<=a ; b++ ){
+        output += `★`
+    }
+    output += `<br/>`
+}
+document.querySelector('#result').innerHTML = output */
+/* 
+★
+★★         
+★★★     
+★★★★ 
+★★★★★
  */
 // 문제4) 입력받은 줄 수 만큼 * 출력 [ ex) 5 ]
+/* const i = Number(prompt('입력받은 수 만큼 ★ 출력'));
+let output = ``;
+for( a=0 ; a<i ; a++){
+    for( b = (a-i)*-1 ; b > 0 ; b--){
+        output += `★`
+    }
+    output += `<br/>`
+}
+
+
+document.querySelector('#result').innerHTML = output */
 /* 
-*****
-****
-***
-**
-*
+★★★★★
+★★★★ 
+★★★
+★★  
+★
  */
 // 문제5) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]
+let output = ``;       
+const line5 = Number(prompt('문제 5 수 입력'));
+    for( let i =1 ; i <= line5 ; i++){
+        for(let b = 1; b<=line5-i ; b++){ output +='☆';}
+        for(let s = 1; s<=i ; s++){output +=`★`}
+        output += `<br/>` // 행 바꿈
+    }
+document.querySelector('#result').innerHTML = output
+
+//★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+//★★★★★★★★ 풀이를 보면 이렇게 쉬운데 왜 이렇게 생각을 못 할까. ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+//★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
 /* 
-    *
-   **
-  ***
- ****
-*****
+        ★
+      ★★
+    ★★★
+  ★★★★
+★★★★★
  */
-// 문제6) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]
+// 문제6) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]                                   
 /* 
 *****
  ****
