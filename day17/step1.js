@@ -16,7 +16,7 @@
 /* const writerArray=[];
 const passwordArray=[];
 const titleArray=[];
-const contentArray=[]; */
+const contentArray=[];*/
 
 const boardArray = []; 
 
@@ -34,7 +34,7 @@ function 글쓰기(){ // 매개변수 : X // 리턴값 : X
     titleArray.push(title);  console.log(titleArray);
     contentArray.push(content);  console.log(contentArray);
  */
-
+    //상수 하나에 다른 상수 다 옮겨서 그 상수하나를 옮겨 넣기
     const board = `${writer}/${password}/${title}/${content}`; console.log(board); // 헷갈릴수 있음.
     boardArray.push(board); console.log(boardArray);
     //3. 배열 HTML에 출력하기

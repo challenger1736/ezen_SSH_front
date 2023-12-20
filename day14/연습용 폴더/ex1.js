@@ -110,7 +110,12 @@ document.querySelector('#result').innerHTML = output
   ★★★★
 ★★★★★
  */
-// 문제6) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]                                   
+// 문제6) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]         
+
+
+
+
+
 /* 
 *****
  ****
