@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
-    <script src='step1.js'></script>
+    
 </head>
 <body>
     
@@ -14,7 +14,7 @@
         <div id="header">
             <img src="img/5e5f78ad-a561-4936-862b-3d8da08af32c.png"/>
             <ul>
-                <li>신제품(NEW)</li>
+                <li onclick="printCategory()">신제품(NEW)</li>
                 <li class="selectMenu">프리미엄</li>
                 <li>와퍼&주니어</li>
                 <li>치킨&슈림프버거</li>
@@ -36,73 +36,23 @@
             <div id="cartBox">
                 <div id="cartContent">
                     <div id="cartTop">
-                        <div>카트<span>10</span></div>
-                        <div> 총 주문 금액 <span>57,000원</span></div>
+                        <div>카트<span>0</span></div>
+                        <div> 총 주문 금액 <span>0원</span></div>
                     </div>
                     <div id="cartBottom">
                         <!-- 장바구니의 제품들 출력되는 구역 JS -->
                         <!-- 카트에 제품 1개 -->
-                        <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                         <!-- 카트에 제품 1개 -->
-                         <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                         <!-- 카트에 제품 1개 -->
-                         <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                         <!-- 카트에 제품 1개 -->
-                         <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                          <!-- 카트에 제품 1개 -->
-                          <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                          <!-- 카트에 제품 1개 -->
-                          <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                          <!-- 카트에 제품 1개 -->
-                          <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                          <!-- 카트에 제품 1개 -->
-                          <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
-                          <!-- 카트에 제품 1개 -->
-                          <div class="citem">
-                            <div>큐브스테이크와퍼</div>
-                            <div>9,500원</div>
-                            <span>X</span>
-                        </div>
+                     
+          
                     </div>
                 </div>
                 <div id="cartBtns">
-                    <input type="button" value="취소하기"/>
-                    <input type="button" value="주문하기"/>
+                    <input onclick="allde()" type="button" value="취소하기"/>
+                    <input onclick="order()" type="button" value="주문하기"/>
                 </div>
             </div>
         </div>
     </div>
+    <script src='step1.js'></script>
 </body>
 </html>

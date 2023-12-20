@@ -98,4 +98,6 @@ student.장래희망 = '생명공학자'
 console.log(student)
 
 delete student.장래희망;
+student.장래희망 = '생명공학자'
+student.장래희망 = '생명공학자2'
 console.log(student)

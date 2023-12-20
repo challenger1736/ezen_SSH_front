@@ -11,8 +11,8 @@ function 등록(){
     console.log(content)
     // 2. 처리 : 입력 받은 값 배열 저장
    할일목록.push(content);
-   상태목록.push(false); // true 완료, false 아직
-   console.log(할일목록); console.log(상태목록);
+   상태목록.push(false); //  false boolean 그자체를 목록에 push
+   console.log(할일목록); console.log(상태목록); // 확인해 보기
     // 3. 출력
     출력()
 
