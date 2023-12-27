@@ -1,28 +1,18 @@
 기본 
-0. 지정되지 않은 것들은 변환없이 왠만하면 String(문자열) 자료형
-1. ; 와 Enter Key 누를때마다 ~면 이라고 읽기(작성시에도 마찬가지)
-2. console.log()를 잘 활용한다 / 스크립트 잘 작동하는지 test용
+1. console.log()를 잘 활용한다 / 스크립트 잘 작동하는지 test용
 
-3. 약간 수학적인 논리를 컴퓨터적으로 해석하기
-    - 변수 상수 정하기, 총 몇 자리의 답이 필요한지 (결과 경우의 수) + 비교를 어떻게 할지(총 비교를 몇 번 할지) + 빈 변수 자리들의 개수 계산
+2.변수 상수 정하기, 총 몇 자리의 답이 필요한지 (결과 경우의 수) + 비교를 어떻게 할지(총 비교를 몇 번 할지)
 
-4. 서로 다른 자료형들을 존재할때는 + 연결연산자 ('문자열'+  숫자  +'문자열')
-    or
-    >> 1. ``으로 전체를 감싼다.
-    >> 2. 데이터 출력할 위치에 ${데이터}
-    ???(`표현식 273+52의 값은 ${273+52} 입니다`)
+3. `표현식 273+52의 값은 ${273+52} 입니다` or ('문자열'+  숫자  +'문자열')
 
+4. 변수에 쓰이는 연산자들 (증감 +=, -= // 전위 후위 ++,--)
 
-5. 변수에 쓰이는 연산자들 (증감 +=, -= // 전위 후위 ++,--)
+5. .value // input, select창의 값을 얻어내기 [ 예시 - let value1 = document.querySelector('#input1').value; ]
 
-6. .value // 인풋창의 값을 얻어내기! 
-    예시 - let value1 = document.querySelector('#input1').value;
-
-7.  document.querySelector('').innerHTML 값을 출력하기
+6.  document.querySelector('').innerHTML 값을 출력하기
     document.querySelector('#result').innerHTML 
     
         HTML에 입력할 것
-
         inch 단위 : <input type="text" onchange="변환기능코드가지고있는상자()">
         이벤트 속성 - onchange [변화시]
                     onclick [클릭시]
@@ -30,7 +20,7 @@
 
             < function(){} 과 연계됨. > - 버튼의 JS 이름이 onclick 이런 이벤트 속성이라보면됨,,
 
-8. return;는 함수(function)안에서 작동하며 return 이후의 명령들을 실행시키지 않는다.
+7. return;는 함수(function)안에서 작동하며 return 이후의 명령들을 실행시키지 않는다.
         - function안의 if 문과 잘 어울림
 
 <<유효성 검사를 위한 항목>>
