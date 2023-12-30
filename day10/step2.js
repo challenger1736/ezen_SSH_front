@@ -162,7 +162,7 @@ let ex2Value2 = Number(prompt("예2 2번째 숫자 입력하세요"))
 console.log( ex2Value1>ex2Value2 ); // 만약에 10과 20을 입력했다면 false
     //2.
     //단항 연산자 [피연산자 1개], 이항연산자[피연산자2개], 삼항연산자[피연산자3개]
-    //삼항 연산자 : 조건 ? 참 : 거짓 [:콜론 ;세미콜론] 
+    //삼항 연산자 : 조건 ? 참 : 거짓 [ 읽는 방법 ==  :콜론 ,  ;세미콜론] 
         //- 조건[T/F]에 따른 실행을 달리할 수 있기때문에,
 
 console.log(ex2Value1>ex2Value2 ? ex2Value1 : ex2Value2 );
